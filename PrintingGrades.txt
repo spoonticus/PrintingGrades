@@ -1,0 +1,78 @@
+ECHO is on.
+Printing Grades 
+
+INPUTS
+
+scan student number
+scan student name
+scan test score
+
+PROCESSING STEPS
+
+scorePercentage = (testScore / 50) * 100
+if scorePercentage <= 100 and >= 90
+	letterGrade = A
+	else if 
+		scorePercentage <= 89 and >= 80
+		letterGrade = B
+	else if
+		scorePercentage <= 79 and >= 70
+		letterGrade = C
+	else if
+		scorePercentage <= 69 and >= 60
+		letterGrade = D
+	else if
+		scorePercentage <= 59 and >= 0
+		letterGrade = F
+	ENDIF
+		
+
+OUTPUTS
+
+print
+	student number
+	student name
+	student test score
+	score percentage
+	letter grade
+	
+	
+-------------------------------------------------------
+
+PSUEDOCODE
+
+DOWHILE records exist
+scan studentNumber
+scan studentName
+scan studentScore
+
+scorePercentage = (studentScore / 50) * 100
+if scorePercentage <= 100 and >= 90
+	letterGrade = A
+	else if 
+		scorePercentage <= 89 and >= 80
+		letterGrade = B
+	else if
+		scorePercentage <= 79 and >= 70
+		letterGrade = C
+	else if
+		scorePercentage <= 69 and >= 60
+		letterGrade = D
+	else if
+		scorePercentage <= 59 and >= 0
+		letterGrade = F
+	ENDIF
+
+print
+	"Student Number: " + studentNumber
+print
+	"Student Name: " + studentName
+print
+	"Student Test Score: " + studentScore
+print
+	"Score Percentage: " + scorePercentage
+print
+	"Letter Grade: " + letterGrade
+	
+ENDDO
+
